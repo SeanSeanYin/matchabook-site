@@ -13,10 +13,10 @@
     <a href="privacy.html">繁體中文</a><a href="privacy-en.html">English</a><a href="privacy-ja.html">日本語</a>
   </nav>
   <h1>Privacy Policy</h1>
-  <p class="updated">Effective date: September 8, 2026</p>
+  <p class="updated">Effective date: September 22, 2026</p>
 
   <div class="card">
-    <p><strong>The short version: Matchabook collects none of your data.</strong> Everything you record stays on your own device and in your own iCloud account. We run no servers, and the developer has no way to access your data.</p>
+    <p><strong>The short version: the matcha you record stays on your own device and iCloud account, and the developer cannot read it.</strong> We never sell your data and run no ad tracking. Starting with 1.9.0, the app uses Google Firebase to collect anonymous crash and usage diagnostics (nothing that identifies you) to improve stability and the experience — see below for details.</p>
   </div>
 
   <h2>What we store, and where</h2>
@@ -28,11 +28,19 @@
   <h2>iCloud sync</h2>
   <p>When your device is signed in to iCloud with iCloud Drive enabled, your records sync between your devices through <strong>the private database of your own iCloud account</strong> — for example, your data follows you to a new iPhone. This data is held by Apple's iCloud service, protected by your Apple Account, and <strong>the developer has no means of reading it</strong>. Without iCloud, the app still works normally with data stored on-device only.</p>
 
+  <h2>Diagnostics & usage analytics (Google Firebase)</h2>
+  <p>Starting with 1.9.0, Matchabook uses Google Firebase Crashlytics and Analytics to help us understand the app's stability and overall usage:</p>
+  <ul>
+    <li><strong>Crashlytics (crash reporting)</strong> — when the app crashes, it collects anonymous crash diagnostics (the stack trace at the time, the device model and iOS version, and a randomly generated installation identifier) so we can find and fix the problem.</li>
+    <li><strong>Analytics (usage analytics)</strong> — collects anonymous, aggregated usage information such as app opens and screen views, along with device model, iOS version, approximate region (estimated from IP address, not precise location), and a randomly generated app-instance identifier.</li>
+  </ul>
+  <p>This data does not include your name, email, or anything that directly identifies you. It is not used for advertising or cross-app/website tracking, is never sold to third parties, and is processed by Google under its <a href="https://policies.google.com/privacy">privacy policy</a>. The matcha content you record on your device (tins, usage, photos, videos, etc.) is not sent to Firebase and remains only on your device and in your own private iCloud database.</p>
+
   <h2>What we don't do</h2>
   <ul>
-    <li>No developer servers — syncing happens only through your own iCloud account, which we cannot access</li>
-    <li>No analytics, tracking, or advertising SDKs</li>
-    <li>No data sharing with any third party</li>
+    <li>We never sell your data, and we do not share your matcha records with any third party</li>
+    <li>No advertising SDKs, and no cross-app/website user tracking</li>
+    <li>Your matcha records (tins, usage, photos, videos) stay on your device and your own iCloud — they are never uploaded to Firebase or any developer server</li>
   </ul>
 
   <h2>Notifications</h2>

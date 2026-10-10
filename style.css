@@ -1,10 +1,17 @@
 :root {
-  --bg: #FAF0E7;
-  --card: #FFFBF4;
-  --deep: #582D1D;
-  --accent: #C05A32;
-  --muted: #B08A72;
-  --border: #F0DDC6;
+  --bg: #F1F4EC;
+  --card: #FBFCF8;
+  --deep: #2C4A34;
+  --accent: #3F915C;
+  --muted: #6F8070;
+  --border: #DDE5D3;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121A15; --card: #19231C; --border: #263329;
+    --deep: #E4EFE6; --accent: #7CC794; --muted: #94A898;
+  }
 }
 * { box-sizing: border-box; }
 body {
@@ -29,6 +36,8 @@ p, li { font-size: 0.98rem; }
 .brand {
   display: flex; align-items: center; gap: 10px; margin-bottom: 24px;
 }
+.brand a { display: flex; align-items: center; gap: 10px; color: inherit; text-decoration: none; }
+.brand img { width: 42px; height: 42px; border-radius: 11px; }
 .brand .mark {
   width: 42px; height: 42px; border-radius: 11px; background: var(--accent);
   display: flex; align-items: center; justify-content: center;

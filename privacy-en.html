@@ -18,7 +18,7 @@
     <a href="./">Home</a><a href="privacy.html">繁體中文</a><a href="privacy-en.html">English</a><a href="privacy-ja.html">日本語</a>
   </nav>
   <h1>Privacy Policy</h1>
-  <p class="updated">Effective date: October 1, 2026</p>
+  <p class="updated">Effective date: October 19, 2026</p>
 
   <div class="card">
     <p><strong>The short version: the matcha you record stays on your own device and iCloud account, and the developer cannot read it.</strong> We never sell your data and run no ad tracking. Starting with 1.9.0, the app uses Google Firebase to collect anonymous crash and usage diagnostics (nothing that identifies you) to improve stability and the experience — see below for details.</p>
@@ -47,6 +47,9 @@
   <h2>Community statistics (optional)</h2>
   <p>Starting with 1.10.0, you can opt in to "Community stats" in Settings. When you do, the app contributes your matcha consumption and label ratings anonymously and in aggregate (added as increments; <strong>no per-entry sequence that could be traced back to you is stored</strong>), used to compute community rankings and averages such as "most enjoyed" and "highest rated" so you can compare with everyone. Each contribution carries a string derived by hashing your iCloud user identifier — <strong>which cannot be reversed to identify you</strong> — used only to count the pool of active contributors and prevent duplicate ballot-stuffing. This feature is <strong>off by default and entirely voluntary</strong>; a first-launch screen explains it before you choose, and it never uploads photos, purchase dates, prices, notes, or any personal records that identify you. You can opt out in Settings anytime.</p>
 
+  <h2>Community recipes (optional, from 1.12.0)</h2>
+  <p>Starting with 1.12.0, you can share your recipes to "Community recipes" and browse and add recipes others have shared. Sharing is always something you do, one recipe at a time: the app first lists exactly what will be public (the recipe name, the label it suits, amounts, ingredient and tool names, brewing steps and hints, notes, and the author nickname you choose), and only after you tap "Share" is it uploaded to the developer's Firebase backend (Cloud Firestore and Cloud Functions, located in Taiwan). No photos, real name, email or account data are included. So that you can later update or withdraw what you shared, and still be recognized as the same author on a new phone, the app derives an irreversible hash from your iCloud user identifier and uses it as the author identity; it is not the original identifier and cannot be used to work out who you are. Other users see only the recipe's content and your nickname. You can update or withdraw a shared recipe at any time, and change your nickname (the byline on all your shared recipes updates with it). Content goes through a word filter and server-side checks, users can report inappropriate content, and recipes reported by several people are hidden automatically. Simply browsing others' recipes requires no data from you.</p>
+
   <h2>What we don't do</h2>
   <ul>
     <li>We never sell your data, and we do not share your matcha records with any third party</li>
@@ -55,7 +58,7 @@
   </ul>
 
   <h2>Notifications</h2>
-  <p>Expiry reminders are local notifications, scheduled and delivered entirely by your device. No server is involved.</p>
+  <p>Expiry reminders, and the optional "revisit" reminders you can turn on, are local notifications, scheduled and delivered entirely by your device. No server is involved. The wording of revisit reminders comes from a read-only remote text file and no data from you is sent; a notification may attach a photo from your own records, which is handled on the device only.</p>
 
   <h2>Export and deletion</h2>
   <p>You can export your usage log as a CSV file from within the app (exported files are yours to manage). Deleting a tin or record removes it from the database, and the deletion syncs to the copy in your iCloud. Uninstalling the app deletes on-device data; synced iCloud data can be removed under Settings → Apple Account → iCloud → Manage Account Storage.</p>

@@ -18,7 +18,7 @@
     <a href="./">Home</a><a href="privacy.html">繁體中文</a><a href="privacy-en.html">English</a><a href="privacy-ja.html">日本語</a>
   </nav>
   <h1>Privacy Policy</h1>
-  <p class="updated">Effective date: October 19, 2026</p>
+  <p class="updated">Effective date: November 1, 2026</p>
 
   <div class="card">
     <p><strong>The short version: the matcha you record stays on your own device and iCloud account, and the developer cannot read it.</strong> We never sell your data and run no ad tracking. Starting with 1.9.0, the app uses Google Firebase to collect anonymous crash and usage diagnostics (nothing that identifies you) to improve stability and the experience — see below for details.</p>
@@ -49,6 +49,8 @@
 
   <h2>Community recipes (optional, from 1.12.0)</h2>
   <p>Starting with 1.12.0, you can share your recipes to "Community recipes" and browse and add recipes others have shared. Sharing is always something you do, one recipe at a time: the app first lists exactly what will be public (the recipe name, the label it suits, amounts, ingredient and tool names, brewing steps and hints, notes, and the author nickname you choose), and only after you tap "Share" is it uploaded to the developer's Firebase backend (Cloud Firestore and Cloud Functions, located in Taiwan). No photos, real name, email or account data are included. So that you can later update or withdraw what you shared, and still be recognized as the same author on a new phone, the app derives an irreversible hash from your iCloud user identifier and uses it as the author identity; it is not the original identifier and cannot be used to work out who you are. Other users see only the recipe's content and your nickname. You can update or withdraw a shared recipe at any time, and change your nickname (the byline on all your shared recipes updates with it). Content goes through a word filter and server-side checks, users can report inappropriate content, and recipes reported by several people are hidden automatically. Simply browsing others' recipes requires no data from you.</p>
+  <h2>Radar comments (optional, from 1.13.0)</h2>
+  <p>Starting with 1.13.0, when you rate a label you can also leave a short text comment (up to 200 characters). This is a separate consent from the anonymous statistics: before your first share, the app lists exactly what will be public (the comment text you wrote and your author nickname), and only after you agree and tap share is it uploaded to the developer's Firebase backend (Cloud Firestore and Cloud Functions, located in Taiwan). No photos, real name, email or account data are included. Authorship works the same way as community recipes: an irreversible hash derived from your iCloud user identifier lets you update or withdraw your comment and be recognized as the same author on a new phone. A comment appears only on that label's "Brand Radar" page and can be read only by Pro users; others see just the comment and your nickname. You can edit or withdraw a comment at any time, and change your nickname in Settings (the byline on all your shared recipes and comments updates with it). Content goes through a word filter and server-side checks, users can report inappropriate content, and comments reported by several people are hidden automatically. If you don't share a comment, no text is uploaded.</p>
 
   <h2>What we don't do</h2>
   <ul>
